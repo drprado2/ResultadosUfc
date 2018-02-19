@@ -1,0 +1,121 @@
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventoCabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    background-color: #bbdefb;
+    cursor: pointer;
+}
+
+.eventoCabecalho:hover {
+    background-color: #64b5f6;
+    transition: all 0.5s;
+}
+
+.eventoCabecalhoData {
+    align-self: flex-end;
+    font-size: 0.9em;
+    padding-right: 3px;
+    padding-top: 3px;
+    font-weight: 500;
+}
+
+.eventoCabecalhoTitulo {
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.EventoCabecalhoIcon {
+    align-self: flex-end;
+    padding-right: 5px;
+}
+
+.luta {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #64b5f6;
+    border-left: 1px solid #64b5f6;
+    border-bottom: 1px solid #64b5f6;
+}
+
+.evento {
+    transition: height 2s;
+}
+
+.evento .luta:last-child {
+    margin-bottom: 5px;
+}
+
+.lutaTitulo {
+    border-bottom: 1px solid #64b5f6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #e3f2fd;
+    color: #1a237e;
+}
+
+.lutadores {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lutador {
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lutador:first-child {
+    border-right: 1px solid #64b5f6;
+}
+
+.textoLose {
+    margin-left: 5px;
+    color: #f44336;
+    font-size: 25px;
+    font-family: Algerian;
+}
+
+.textoWin {
+    margin-left: 5px;
+    color: #00e676;
+    font-size: 25px;
+    font-family: Algerian;
+}
+
+.lose {
+    background-color: #ffcdd2;
+}
+
+.win {
+    background-color: #b9f6ca;
+}
+
+.areaLutas {
+    overflow: hidden;
+    transition: height 1s linear;
+}
